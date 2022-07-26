@@ -20,7 +20,7 @@ export default class Character extends Model<Character> {
   story!: string
 
   @BelongsToMany(() => Film, () => Featuring)
-  films!: Film[]
+  films?: Film[]
 }
 
 

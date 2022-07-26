@@ -18,5 +18,5 @@ export default class Film extends Model<Film> {
   rating!: number;
 
   @BelongsToMany(() => Character, () => Featuring)
-  characters!: Character[];
+  characters?: Character[];
 }
